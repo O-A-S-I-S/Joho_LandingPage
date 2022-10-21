@@ -1,6 +1,6 @@
 # Joho_LandingPage
 ## Home
-![Home ss](./img/home.png)
+![Home ss](./ss/home.png)
 ## About - Section 1
 ![About1 ss](./ss/about0.png)
 ## About - Section 2
