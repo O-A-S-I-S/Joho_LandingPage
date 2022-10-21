@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #600D67;
+    /* --primary-color-transparent: #600D67C0; */
+    /* --secondary-color-transparent: #09002EC0; */
+    --secondary-color: #09002E;
+    --secondary-color-light: #463f62;
+    --secondary-alt-color: #610083;
+    --primary-light-color: #954FAD;
+    --secondary-light-color: #E0E0E0;
+    --font-dark-color: #020202;
+    --font-light-color: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16;
+    margin-top: 80px;
+}
+
+h1, h2, h3, h4, h5, p {
+    line-height: 1.5em;
+    padding: 0.4em 0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: medium;
+    font-size: 32px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 26px;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+p {
+    font-weight: normal;
+    font-size: 16px;
+}
