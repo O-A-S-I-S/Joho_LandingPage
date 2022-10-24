@@ -66,7 +66,7 @@ header {
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 50px;
     width: 100%;
     padding-top: 30px;
@@ -256,6 +256,7 @@ main {
     opacity: 0.85;
 }
 
-.sidebar-item-active {
-    background-color: var(--primary-light-color);
+.active {
+    background:
+        linear-gradient(purple, purple) left/100% calc(top - 15px);
 }
