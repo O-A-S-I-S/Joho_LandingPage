@@ -13,3 +13,15 @@
 ![Pricing ss](./ss/pricing.png)
 ## Footer
 ![Footer ss](./ss/footer.png)
+## The Team - default view
+![The Team ss](./ss/team.png)
+## The Team - Ian
+![The Team - Ian ss](./ss/team0.png)
+## The Team - Luis
+![The Team - Luis ss](./ss/team1.png)
+## The Team - Roberto
+![The Team - Roberto ss](./ss/team2.png)
+## The Team - Iam
+![The Team - Iam ss](./ss/team3.png)
+## The Team - Samuel
+![The Team - Samuel ss](./ss/team4.png)
