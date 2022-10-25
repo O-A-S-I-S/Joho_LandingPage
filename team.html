@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Joho</title>
+    <link rel="icon" href="./img/joho.ico" type="image/x-icon">
+    <style>
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+        }
+        
+        .grid-item {
+            text-align:center;
+            padding: 20px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .grid-item:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .item1 {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+        
+        .item2 {
+            grid-column: 3 / span 2;
+            grid-row: 1;
+        }
+        
+        .item3 {
+            grid-column: 5 / span 2;
+            grid-row: 1;
+        }
+        
+        .item4 {
+            grid-column: 2 / span 2;
+            grid-row: 2;
+        }
+        
+        .item5 {
+            grid-column: 4 / span 2;
+            grid-row: 2;
+        }
+        .member{
+            display: none;
+        }
+        #overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.681);
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        #text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 50px;
+            color: white;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#pricing">Pricing</a>
+            <a href="team.html">The Team</a>
+        </nav>
+    </header>
+    <main>
+        <div style="width: 85%;
+                    padding: 20px;">
+            <div style="background-color:var(--secondary-color);
+                    width:80%;
+                    border-radius: 16px;
+                    padding-left: 13%;
+                    padding-right: 13%;
+                    padding-top: 3%;
+                    padding-bottom: 3%;">
+                <div style="background-color: var(--primary-light-color);
+                            border-radius: 16px;
+                            box-shadow: 0.4rem 0.4rem 7px var(--secondary-light-color);
+                            border-radius: 0.5rem;">
+                    <div class="grid-container">
+                        <div class="grid-item item1">
+                            <div class="member" id="ian">
+                                <div id="overlay" onclick="offI()">
+                                    <div id="text">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <img src="img/image 1.png" alt="Avatar" style="width:100%">
+                                                    </th>
+                                                    <th>
+                                                        <p style="color: #ffffff00;">spaceeeeeee</p>
+                                                    </th>
+                                                    <th>
+                                                        <h1>
+                                                            Ian Steve González Vidalón
+                                                        </h1>
+                                                        <p>
+                                                            Estudiante de la carrera de ciencias de la computación en la UPC.
+                                                        </p>
+                                                        <ul style="font-size: large; text-align: left;">
+                                                            <p>
+                                                                Intereses:
+                                                            </p>
+                                                            <li>
+                                                                Ciberseguridad
+                                                            </li>
+                                                            <li>
+                                                                Inteligencia artificial
+                                                            </li>
+                                                            <li>
+                                                                Programación competitiva
+                                                            </li>
+                                                        </ul>
+                                                    </th>
+                                                </tr>
+                                            </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width:100%; 
+                                        justify-content: center;
+                                        display:flex;" onclick="onI()">
+                                <div style="width: 50%;
+                                            text-align: center;
+                                            justify-content: center;">
+                                    <img src="img/image 1.png" alt="Avatar" style="width:100%">
+                                    <h4 style="color: var(--font-light-color);"><b>IAN<br>GONZÁLEZ</b></h4>
+                                </div>
+                                <script>
+                                    function onI() {
+                                      document.getElementById("ian").style.display = "block";
+                                    }
+                                    
+                                    function offI() {
+                                      document.getElementById("ian").style.display = "none";
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                        <div class="grid-item item2">
+                            <div class = "member" id="luis" onclick="offl()">
+                                <div id="overlay">
+                                    <div id="text">
+                                        <div class="grid-cotainer">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <img src="img/image 2.png" alt="Avatar" style="width:100%">
+                                                    </th>
+                                                    <th>
+                                                        <p style="color: #ffffff00;">spaceeeeeee</p>
+                                                    </th>
+                                                    <th>
+                                                        <h1>
+                                                            Luis Roberto Arroyo Bonifaz
+                                                        </h1>
+                                                        <p>
+                                                            Estudiante de la carrera de ciencias de la computación en la UPC.
+                                                        </p>
+                                                        <ul style="font-size: large; text-align: left;">
+                                                            <p>
+                                                                Intereses:
+                                                            </p>
+                                                            <li>
+                                                                Web Design
+                                                            </li>
+                                                            <li>
+                                                                Programación Competitiva
+                                                            </li>
+                                                            <li>
+                                                                Inteligencia Artificial
+                                                            </li>
+                                                        </ul>
+                                                    </th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width:100%; 
+                                        justify-content: center;
+                                        display:flex;" onclick="onl()">
+                                <div style="width: 50%;
+                                            text-align: center;
+                                            justify-content: center;">
+                                    <img src="img/image 2.png" alt="Avatar" style="width:100%">
+                                    <h4 style="color: var(--font-light-color);"><b>LUIS<br>ARROYO</b></h4>
+                                </div>
+                                <script>
+                                    function onl() {
+                                      document.getElementById("luis").style.display = "block";
+                                    }
+                                    
+                                    function offl() {
+                                      document.getElementById("luis").style.display = "none";
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                        <div class="grid-item item3">
+                            <div class="member" id="roberto">
+                                <div id="overlay" onclick="offr()">
+                                    <div id="text">
+                                        <div class="grid-cotainer">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <img src="img/image 3.png" alt="Avatar" style="width:100%">
+                                                    </th>
+                                                    <th>
+                                                        <p style="color: #ffffff00;">spaceeeeeee</p>
+                                                    </th>
+                                                    <th>
+                                                        <h1>
+                                                            Roberto Carlos Basauri Quispe
+                                                        </h1>
+                                                        <p>
+                                                            Estudiante de la carrera de ciencias de la computación en la UPC.
+                                                        </p>
+                                                        <ul style="font-size: large; text-align: left;">
+                                                            <p>
+                                                                Intereses:
+                                                            </p>
+                                                            <li>
+                                                                Programación de videojuegos
+                                                            </li>
+                                                            <li>
+                                                                Data Analytics
+                                                            </li>
+                                                            <li>
+                                                                Machine Learning
+                                                            </li>
+                                                        </ul>
+                                                    </th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width:100%; 
+                                        justify-content: center;
+                                        display:flex;" onclick="onr()">
+                                <div style="width: 50%;
+                                            text-align: center;
+                                            justify-content: center;">
+                                    <img src="img/image 3.png" alt="Avatar" style="width:100%">
+                                    <h4 style="color: var(--font-light-color);"><b>ROBERTO<br>BASAURI</b></h4>
+                                </div>
+                            </div>
+                            <script>
+                                function onr() {
+                                  document.getElementById("roberto").style.display = "block";
+                                }
+                                
+                                function offr() {
+                                  document.getElementById("roberto").style.display = "none";
+                                }
+                            </script>
+                        </div>
+                        <div class="grid-item item4">
+                            <div class="member" id="iam">
+                                <div id="overlay" onclick="offm()">
+                                    <div id="text">
+                                        <div class="grid-cotainer">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <img src="img/image 5.png" alt="Avatar" style="width:100%">
+                                                    </th>
+                                                    <th>
+                                                        <p style="color: #ffffff00;">spaceeeeeee</p>
+                                                    </th>
+                                                    <th>
+                                                        <h1>
+                                                            Iam Anthony Marcelo Alvarez Orellana
+                                                        </h1>
+                                                        <p>
+                                                            Estudiante de la carrera de ciencias de la computación en la UPC.
+                                                        </p>
+                                                        <ul style="font-size: large; text-align: left;">
+                                                            <p>
+                                                                Intereses:
+                                                            </p>
+                                                            <li>
+                                                                Baloncesto
+                                                            </li>
+                                                            <li>
+                                                                Desportes de contacto
+                                                            </li>
+                                                            <li>
+                                                                Programar
+                                                            </li>
+                                                        </ul>
+                                                    </th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width:100%; 
+                                        justify-content: center;
+                                        display:flex;" onclick="onm()">
+                                <div style="width: 50%;
+                                            text-align: center;
+                                            justify-content: center;">
+                                    <img src="img/image 5.png" alt="Avatar" style="width:100%">
+                                    <h4 style="color: var(--font-light-color);"><b>IAM<br>ALVAREZ</b></h4>
+                                </div>
+                                <script>
+                                    function onm() {
+                                      document.getElementById("iam").style.display = "block";
+                                    }
+                                    
+                                    function offm() {
+                                      document.getElementById("iam").style.display = "none";
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                        <div class="grid-item item5">
+                            <div class="member" id="sam">
+                                <div id="overlay" onclick="off()">
+                                    <div id="text">
+                                        <div class="grid-cotainer">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <img src="img/image 4.png" alt="Avatar" style="width:100%">
+                                                    </th>
+                                                    <th>
+                                                        <p style="color: #ffffff00;">spaceeeeeee</p>
+                                                    </th>
+                                                    <th>
+                                                        <h1>
+                                                            Samuel Esteban Cano Chocce
+                                                        </h1>
+                                                        <p>
+                                                            Estudiante de la carrera de ciencias de la computación en la UPC.
+                                                        </p>
+                                                        <ul style="font-size: large; text-align: left;">
+                                                            <p>
+                                                                Intereses:
+                                                            </p>
+                                                            <li>
+                                                                Ajedrez
+                                                            </li>
+                                                            <li>
+                                                                Baloncesto
+                                                            </li>
+                                                            <li>
+                                                                Programación competitiva
+                                                            </li>
+                                                        </ul>
+                                                    </th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width:100%; 
+                                        justify-content: center;
+                                        display:flex;" onclick="on(overlay)">
+                                <div style="width: 54%;
+                                            text-align: center;
+                                            justify-content: center;">
+                                    <img src="img/image 4.png" alt="Avatar" style="width:100%">
+                                    <h4 style="color: var(--font-light-color);"><b>SAMUEL<br>CANO</b></h4>
+                                </div>
+                                <script>
+                                    function on() {
+                                      document.getElementById("sam").style.display = "block";
+                                    }
+                                    
+                                    function off() {
+                                      document.getElementById("sam").style.display = "none";
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
