@@ -4,78 +4,9 @@
     <meta charset= "UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/vttstyles.css">
     <title>Joho</title>
     <link rel="icon" href="./img/joho.ico" type="image/x-icon">
-    <style>
-        .grid-container {
-            display: grid;
-            gap: 10px;
-            padding: 10px;
-        }
-        
-        .grid-item {
-            text-align:center;
-            padding: 20px;
-            font-size: 30px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .grid-item:hover{
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-
-        .item1 {
-            grid-column: 1 / span 2;
-            grid-row: 1;
-        }
-        
-        .item2 {
-            grid-column: 3 / span 2;
-            grid-row: 1;
-        }
-        
-        .item3 {
-            grid-column: 5 / span 2;
-            grid-row: 1;
-        }
-        
-        .item4 {
-            grid-column: 2 / span 2;
-            grid-row: 2;
-        }
-        
-        .item5 {
-            grid-column: 4 / span 2;
-            grid-row: 2;
-        }
-        .member{
-            display: none;
-        }
-        #overlay {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.681);
-            z-index: 2;
-            cursor: pointer;
-        }
-
-        #text{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            font-size: 50px;
-            color: white;
-            transform: translate(-50%,-50%);
-            -ms-transform: translate(-50%,-50%);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -87,19 +18,9 @@
         </nav>
     </header>
     <main>
-        <div style="width: 85%;
-                    padding: 20px;">
-            <div style="background-color:var(--secondary-color);
-                    width:80%;
-                    border-radius: 16px;
-                    padding-left: 13%;
-                    padding-right: 13%;
-                    padding-top: 3%;
-                    padding-bottom: 3%;">
-                <div style="background-color: var(--primary-light-color);
-                            border-radius: 16px;
-                            box-shadow: 0.4rem 0.4rem 7px var(--secondary-light-color);
-                            border-radius: 0.5rem;">
+        <div class="view_the_team">
+            <div class="view_the_team-box">
+                <div class="view_the_team-content">
                     <div class="grid-container">
                         <div class="grid-item item1">
                             <div class="member" id="ian">
@@ -108,10 +29,10 @@
                                             <table>
                                                 <tr>
                                                     <th>
-                                                        <img src="img/image 1.png" alt="Avatar" style="width:100%">
+                                                        <img src="img/image 1.png" alt="Avatar">
                                                     </th>
                                                     <th>
-                                                        <p style="color: #ffffff00;">spaceeeeeee</p>
+                                                        <div class="space-col-inv"></div>
                                                     </th>
                                                     <th>
                                                         <h1>
@@ -120,7 +41,7 @@
                                                         <p>
                                                             Estudiante de la carrera de ciencias de la computación en la UPC.
                                                         </p>
-                                                        <ul style="font-size: large; text-align: left;">
+                                                        <ul>
                                                             <p>
                                                                 Intereses:
                                                             </p>
@@ -140,14 +61,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="width:100%; 
-                                        justify-content: center;
-                                        display:flex;" onclick="onI()">
-                                <div style="width: 50%;
-                                            text-align: center;
-                                            justify-content: center;">
-                                    <img src="img/image 1.png" alt="Avatar" style="width:100%">
-                                    <h4 style="color: var(--font-light-color);"><b>IAN<br>GONZÁLEZ</b></h4>
+                            <div class="view_the_team-space-click" onclick="onI()">
+                                <div class="member-content">
+                                    <img src="img/image 1.png" alt="Avatar">
+                                    <h4><b>IAN<br>GONZÁLEZ</b></h4>
                                 </div>
                                 <script>
                                     function onI() {
@@ -168,10 +85,10 @@
                                             <table>
                                                 <tr>
                                                     <th>
-                                                        <img src="img/image 2.png" alt="Avatar" style="width:100%">
+                                                        <img src="img/image 2.png" alt="Avatar">
                                                     </th>
                                                     <th>
-                                                        <p style="color: #ffffff00;">spaceeeeeee</p>
+                                                        <div class="space-col-inv"></div>
                                                     </th>
                                                     <th>
                                                         <h1>
@@ -180,7 +97,7 @@
                                                         <p>
                                                             Estudiante de la carrera de ciencias de la computación en la UPC.
                                                         </p>
-                                                        <ul style="font-size: large; text-align: left;">
+                                                        <ul>
                                                             <p>
                                                                 Intereses:
                                                             </p>
@@ -201,14 +118,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="width:100%; 
-                                        justify-content: center;
-                                        display:flex;" onclick="onl()">
-                                <div style="width: 50%;
-                                            text-align: center;
-                                            justify-content: center;">
-                                    <img src="img/image 2.png" alt="Avatar" style="width:100%">
-                                    <h4 style="color: var(--font-light-color);"><b>LUIS<br>ARROYO</b></h4>
+                            <div class="view_the_team-space-click" onclick="onl()">
+                                <div class="member-content">
+                                    <img src="img/image 2.png" alt="Avatar">
+                                    <h4><b>LUIS<br>ARROYO</b></h4>
                                 </div>
                                 <script>
                                     function onl() {
@@ -229,10 +142,10 @@
                                             <table>
                                                 <tr>
                                                     <th>
-                                                        <img src="img/image 3.png" alt="Avatar" style="width:100%">
+                                                        <img src="img/image 3.png" alt="Avatar">
                                                     </th>
                                                     <th>
-                                                        <p style="color: #ffffff00;">spaceeeeeee</p>
+                                                        <div class="space-col-inv"></div>
                                                     </th>
                                                     <th>
                                                         <h1>
@@ -241,7 +154,7 @@
                                                         <p>
                                                             Estudiante de la carrera de ciencias de la computación en la UPC.
                                                         </p>
-                                                        <ul style="font-size: large; text-align: left;">
+                                                        <ul>
                                                             <p>
                                                                 Intereses:
                                                             </p>
@@ -262,14 +175,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="width:100%; 
-                                        justify-content: center;
-                                        display:flex;" onclick="onr()">
-                                <div style="width: 50%;
-                                            text-align: center;
-                                            justify-content: center;">
-                                    <img src="img/image 3.png" alt="Avatar" style="width:100%">
-                                    <h4 style="color: var(--font-light-color);"><b>ROBERTO<br>BASAURI</b></h4>
+                            <div class="view_the_team-space-click" onclick="onr()">
+                                <div class="member-content">
+                                    <img src="img/image 3.png" alt="Avatar">
+                                    <h4><b>ROBERTO<br>BASAURI</b></h4>
                                 </div>
                             </div>
                             <script>
@@ -290,10 +199,10 @@
                                             <table>
                                                 <tr>
                                                     <th>
-                                                        <img src="img/image 5.png" alt="Avatar" style="width:100%">
+                                                        <img src="img/image 5.png" alt="Avatar">
                                                     </th>
                                                     <th>
-                                                        <p style="color: #ffffff00;">spaceeeeeee</p>
+                                                        <div class="space-col-inv"></div>
                                                     </th>
                                                     <th>
                                                         <h1>
@@ -302,7 +211,7 @@
                                                         <p>
                                                             Estudiante de la carrera de ciencias de la computación en la UPC.
                                                         </p>
-                                                        <ul style="font-size: large; text-align: left;">
+                                                        <ul>
                                                             <p>
                                                                 Intereses:
                                                             </p>
@@ -323,14 +232,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="width:100%; 
-                                        justify-content: center;
-                                        display:flex;" onclick="onm()">
-                                <div style="width: 50%;
-                                            text-align: center;
-                                            justify-content: center;">
-                                    <img src="img/image 5.png" alt="Avatar" style="width:100%">
-                                    <h4 style="color: var(--font-light-color);"><b>IAM<br>ALVAREZ</b></h4>
+                            <div class="view_the_team-space-click" onclick="onm()">
+                                <div class="member-content">
+                                    <img src="img/image 5.png" alt="Avatar">
+                                    <h4><b>IAM<br>ALVAREZ</b></h4>
                                 </div>
                                 <script>
                                     function onm() {
@@ -351,10 +256,10 @@
                                             <table>
                                                 <tr>
                                                     <th>
-                                                        <img src="img/image 4.png" alt="Avatar" style="width:100%">
+                                                        <img src="img/image 4.png" alt="Avatar">
                                                     </th>
                                                     <th>
-                                                        <p style="color: #ffffff00;">spaceeeeeee</p>
+                                                        <div class="space-col-inv"></div>
                                                     </th>
                                                     <th>
                                                         <h1>
@@ -363,7 +268,7 @@
                                                         <p>
                                                             Estudiante de la carrera de ciencias de la computación en la UPC.
                                                         </p>
-                                                        <ul style="font-size: large; text-align: left;">
+                                                        <ul>
                                                             <p>
                                                                 Intereses:
                                                             </p>
@@ -384,14 +289,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="width:100%; 
-                                        justify-content: center;
-                                        display:flex;" onclick="on(overlay)">
-                                <div style="width: 54%;
-                                            text-align: center;
-                                            justify-content: center;">
-                                    <img src="img/image 4.png" alt="Avatar" style="width:100%">
-                                    <h4 style="color: var(--font-light-color);"><b>SAMUEL<br>CANO</b></h4>
+                            <div class="view_the_team-space-click" onclick="on(overlay)">
+                                <div class="member-content">
+                                    <img src="img/image 4.png" alt="Avatar">
+                                    <h4><b>SAMUEL<br>CANO</b></h4>
                                 </div>
                                 <script>
                                     function on() {
