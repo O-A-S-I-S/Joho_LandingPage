@@ -7,3 +7,9 @@
 ![About2 ss](./ss/about1.png)
 ## About - Section 3
 ![About3 ss](./ss/about2.png)
+## Testimonials
+![Testimonials ss](./ss/testimonials.png)
+## Pricing
+![Pricing ss](./ss/pricing.png)
+## Footer
+![Footer ss](./ss/footer.png)
